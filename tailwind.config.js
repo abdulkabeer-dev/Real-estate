@@ -34,33 +34,8 @@ export default {
       fontFamily: {
         heading: ['"Playfair Display"', 'serif'],
         body: ['"Inter"', 'sans-serif'],
-      },
-      animation: {
-        'fade-in': 'fadeIn 0.8s ease-out forwards',
-        'slide-up': 'slideUp 0.8s ease-out forwards',
-        'slide-right': 'slideRight 0.8s ease-out forwards',
-        'float': 'float 6s ease-in-out infinite',
-        'counter': 'counter 2s ease-out forwards',
-      },
-      keyframes: {
-        fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
-        },
-        slideUp: {
-          '0%': { opacity: '0', transform: 'translateY(30px)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' },
-        },
-        slideRight: {
-          '0%': { opacity: '0', transform: 'translateX(-30px)' },
-          '100%': { opacity: '1', transform: 'translateX(0)' },
-        },
-        float: {
-          '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-20px)' },
-        },
       }
     },
   },
   plugins: [],
-            }
+}
