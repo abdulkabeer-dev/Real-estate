@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -36,18 +37,6 @@ body {
   background: #a8822e;
 }
 
-@layer utilities {
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-gold-400;
-  }
-  .section-padding {
-    @apply py-16 md:py-24 px-4 md:px-8;
-  }
-  .container-custom {
-    @apply max-w-7xl mx-auto;
-  }
-}
-
 .hero-overlay {
   background: linear-gradient(
     135deg,
@@ -64,13 +53,6 @@ body {
 .card-hover:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
-}
-
-.line-clamp-3 {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
 .animate-on-scroll {
@@ -111,8 +93,7 @@ body {
 }
 
 @keyframes float {
-  0%,
-  100% {
+  0%, 100% {
     transform: translateY(0px);
   }
   50% {
@@ -131,140 +112,3 @@ body {
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
-
-@layer utilities {
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-gold-400;
-  }
-  .section-padding {
-    @apply py-16 md:py-24 px-4 md:px-8;
-  }
-  .container-custom {
-    @apply max-w-7xl mx-auto;
-  }
-}
-
-.hero-overlay {
-  background: linear-gradient(
-    135deg,
-    rgba(10, 10, 26, 0.92) 0%,
-    rgba(26, 26, 46, 0.85) 40%,
-    rgba(10, 10, 26, 0.7) 100%
-  );
-}
-
-.card-hover {
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.card-hover:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
-}
-
-.line-clamp-3 {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.animate-on-scroll {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s ease-out;
-}
-
-.animate-on-scroll.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.bg-pattern {
-  background-image: 
-    radial-gradient(circle at 20% 50%, rgba(196, 154, 60, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(238, 84, 39, 0.05) 0%, transparent 50%);
-}
-
-/* ===== ANIMATIONS ===== */
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-@keyframes slideUp {
-  0% { opacity: 0; transform: translateY(30px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
-}
-
-.animate-fade-in {
-  animation: fadeIn 0.8s ease-out forwards;
-}
-
-.animate-slide-up {
-  animation: slideUp 0.8s ease-out forwards;
-}
-
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}}
-
-@layer utilities {
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-gold-400;
-  }
-  .section-padding {
-    @apply py-16 md:py-24 px-4 md:px-8;
-  }
-  .container-custom {
-    @apply max-w-7xl mx-auto;
-  }
-}
-
-.hero-overlay {
-  background: linear-gradient(
-    135deg,
-    rgba(10, 10, 26, 0.92) 0%,
-    rgba(26, 26, 46, 0.85) 40%,
-    rgba(10, 10, 26, 0.7) 100%
-  );
-}
-
-.card-hover {
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.card-hover:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
-}
-
-.line-clamp-3 {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.animate-on-scroll {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s ease-out;
-}
-
-.animate-on-scroll.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.bg-pattern {
-  background-image: 
-    radial-gradient(circle at 20% 50%, rgba(196, 154, 60, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(238, 84, 39, 0.05) 0%, transparent 50%);
-  }
